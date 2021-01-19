@@ -35,7 +35,7 @@ def normalize(input_string):
     """
     normalized_string = ""
     for i, char in enumerate(input_string):
-        if input_string[i] != " " and input_string[i-1] == " ": #transition
+        if i!=0 and input_string[i] != " " and input_string[i-1] == " ": #transition
             normalized_string += " "
             
         if char != " ":
